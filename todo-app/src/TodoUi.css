@@ -1,0 +1,12 @@
+.collection-item
+{
+    background-color: aqua;
+    padding: 10px;
+    margin: 30px;
+}
+
+p
+{
+    background-color: brown;
+    color: aliceblue;
+}
