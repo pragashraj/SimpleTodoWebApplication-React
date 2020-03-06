@@ -1,5 +1,6 @@
 import React ,{Component} from 'react';
 import TodoUI from './TodoUI';
+import AddTodo from './AddTodo';
 
 class App extends Component {
   state={
@@ -19,11 +20,20 @@ class App extends Component {
       todos
     })
   }
+
+  addNewTodo=(todo)=>{
+    todo.id=Math.random();
+    let todos=[...this.state.todos,todo];
+    this.setState({
+      todos
+    })
+  }
   render(){
     return (
       <div className="App">
         <h1 className="center blue-text">Todo's</h1>
         <TodoUI todos={this.state.todos} deleteTodo={this.deleteTodo} />
+        <AddTodo addNewTodo={this.addNewTodo}/>
       </div>
     );
   }

@@ -10,3 +10,8 @@ p
     background-color: brown;
     color: aliceblue;
 }
+
+.addTodo
+{
+    margin: 27px;
+}
